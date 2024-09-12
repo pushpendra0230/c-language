@@ -1,0 +1,401 @@
+c assingment 26 dec 2023 .
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+q.1.
+2---->10 table nested .
+
+#include<stdio.h>
+int main()
+{
+    for(int i=2;i<=10;i++)
+    {
+        for(int j=1;j<=10;j++)
+    {
+        printf("%d ",i*j);
+    }
+    printf("\n");
+    }
+    return 0;
+}
+output:-
+2 4 6 8 10 12 14 16 18 20 
+3 6 9 12 15 18 21 24 27 30 
+4 8 12 16 20 24 28 32 36 40 
+5 10 15 20 25 30 35 40 45 50 
+6 12 18 24 30 36 42 48 54 60 
+7 14 21 28 35 42 49 56 63 70 
+8 16 24 32 40 48 56 64 72 80 
+9 18 27 36 45 54 63 72 81 90 
+10 20 30 40 50 60 70 80 90 100
+-------------------------------------------------------
+q.2.
+5--->15 table print nested for loopp.
+
+#include<stdio.h>
+int main()
+{
+    for(int i=2;i<=15;i++)
+    {
+        for(int j=1;j<=10;j++)
+    {
+        printf("%d ",i*j);
+    }
+    printf("\n");
+    }
+    return 0;
+}
+output:-
+2 4 6 8 10 12 14 16 18 20 
+3 6 9 12 15 18 21 24 27 30 
+4 8 12 16 20 24 28 32 36 40 
+5 10 15 20 25 30 35 40 45 50 
+6 12 18 24 30 36 42 48 54 60 
+7 14 21 28 35 42 49 56 63 70 
+8 16 24 32 40 48 56 64 72 80 
+9 18 27 36 45 54 63 72 81 90 
+10 20 30 40 50 60 70 80 90 100 
+11 22 33 44 55 66 77 88 99 110 
+12 24 36 48 60 72 84 96 108 120 
+13 26 39 52 65 78 91 104 117 130 
+14 28 42 56 70 84 98 112 126 140 
+15 30 45 60 75 90 105 120 135 150 
+-----------------------------------------------------------
+q.3.
+#include<stdio.h>
+int main()
+{
+    for(int i=23;i<=55;i++)
+    {
+        for(int j=1;j<=10;j++)
+    {
+        printf("%d ",i*j);
+    }
+    printf("\n");
+    }
+    return 0;
+}
+output:-
+23 46 69 92 115 138 161 184 207 230
+24 48 72 96 120 144 168 192 216 240 
+25 50 75 100 125 150 175 200 225 250 
+26 52 78 104 130 156 182 208 234 260 
+27 54 81 108 135 162 189 216 243 270 
+28 56 84 112 140 168 196 224 252 280 
+29 58 87 116 145 174 203 232 261 290 
+30 60 90 120 150 180 210 240 270 300 
+31 62 93 124 155 186 217 248 279 310 
+32 64 96 128 160 192 224 256 288 320 
+33 66 99 132 165 198 231 264 297 330 
+34 68 102 136 170 204 238 272 306 340 
+35 70 105 140 175 210 245 280 315 350 
+36 72 108 144 180 216 252 288 324 360 
+37 74 111 148 185 222 259 296 333 370 
+38 76 114 152 190 228 266 304 342 380 
+39 78 117 156 195 234 273 312 351 390 
+40 80 120 160 200 240 280 320 360 400 
+41 82 123 164 205 246 287 328 369 410 
+42 84 126 168 210 252 294 336 378 420 
+43 86 129 172 215 258 301 344 387 430 
+44 88 132 176 220 264 308 352 396 440 
+45 90 135 180 225 270 315 360 405 450 
+46 92 138 184 230 276 322 368 414 460 
+47 94 141 188 235 282 329 376 423 470 
+48 96 144 192 240 288 336 384 432 480 
+49 98 147 196 245 294 343 392 441 490 
+50 100 150 200 250 300 350 400 450 500 
+51 102 153 204 255 306 357 408 459 510 
+52 104 156 208 260 312 364 416 468 520 
+53 106 159 212 265 318 371 424 477 530 
+54 108 162 216 270 324 378 432 486 540 
+55 110 165 220 275 330 385 440 495 550 
+---------------------------------------------------------------------------------
+q.4.
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("enter the character ");
+    scanf("%c",&a);
+    
+    if(a=='p')
+    {
+        int num=121;
+        int rem;
+        int sum=0;
+        int temp=num;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+            
+        }
+        if(temp==sum)
+        {
+            printf("this number is palindrome");
+        }
+        else
+        {
+            printf("this number is not palindrome");
+        }
+    }
+    else if(a=='a')
+    {
+        int num=99;
+        int sum=0,temp;
+        int rem;
+        while(num>0)
+        {
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+            
+        }
+        {
+            printf("%d",sum);
+            if(temp==sum)
+            {
+                printf("this number is armostrog");
+            }
+            else
+            {
+                printf("this number is not armostrog");
+            }
+        }
+    }
+    else if(a=='f')
+    {
+    int num=11;
+    int fact=1;
+    for( int i=1;i<=num;i++)
+    {
+       fact=fact*i;
+    }
+    printf("%d",fact);
+    
+}
+else if(a=='b')
+{
+    int num =11;
+     int n1=0,n2=1,n3;
+     printf("%d %d ",n1,n2);
+     for(int i=1;i<=num;i++)
+     {
+         n3=n1+n2;
+         printf("%d ",n3);
+         n1=n2;
+         n2=n3;
+     }
+}
+else if(a=='c')
+{
+    int num=100000;
+    int count=0;
+    for(count=0;count<=num;count++)
+    {
+        num=num/10;
+    }
+    printf(" count:%d\n",count);
+    
+}
+else if(a=='t')
+{
+	int n,i;
+	printf("enter an integer");
+	scanf("%d",&n);
+	for(i=1;i<=10;i++) 
+	{
+	    int j=i*n;
+	    {
+		printf("%d ",j);
+	        
+	    }
+	}
+}
+else if(a=='e')
+
+{
+ int num1,num2;
+            printf("enter the value of num1 and num2");
+            scanf("%d%d",&num1,&num2);
+            
+            while(num1<num2)
+         {   if(num1%2==0)
+            {
+                printf("%d ",num1);
+                
+            }
+                num1++;
+            }
+}
+else if(a=='o')
+{
+    int num1,num2;
+            printf("enter the value of num1 and num2");
+            scanf("%d%d",&num1,&num2);
+            while(num1<num2)
+         {   if(num1%2!=0)
+            {
+                printf("%d ",num1);
+                
+            }
+                num1++;
+            }
+}
+
+else if(a=='v')
+{
+    char a;
+	printf("enter a charector : ");
+	scanf(" %c",&a);
+	
+	if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u')
+	{
+		printf("charector is vowal ");
+	}
+	else 
+	{
+		printf("charector is consonant ");
+	}
+	
+}
+else if(a=='m')
+{
+     int num;
+	    printf("enter  the  num 1-12");
+	    scanf("%d",&num);
+	    if(num==1)
+	    {
+	        printf("January");
+	    }
+	    else if(num==2)
+    {
+        printf("feburary");
+    }
+     else if(num==3)
+    {
+        printf("march");
+    }
+     else if(num==4)
+    {
+        printf("april");
+    }
+     else if(num==5)
+    {
+        printf("may");
+    }
+     else if(num==6)
+    {
+        printf("june");
+    }
+     else if(num==7)
+    {
+        printf("july");
+    }else if(num==8)
+    {
+        printf("auguest");
+    }
+     else if(num==9)
+    {
+        printf("september");
+    }
+     else if(num==10)
+    {
+        printf("october");
+    }
+     else if(num==11)
+    {
+        printf("november");
+    }
+     else if(num==12)
+    {
+        printf("december");
+    }
+}
+else if(a=='r')
+{
+    int num=1234567;
+    int sum=0,rem;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+        
+    }
+    {
+        printf("%d\n",sum);
+    }
+}
+else if(a=='g')
+{
+    int age;
+    printf("enter your age");
+    scanf("%d",&age);
+    if (age>18)
+    {
+        printf("valid for vote");
+    }
+    else if(age<18){
+        printf("not valid for vote");
+}
+}
+    return 0;
+}
+output:-
+enter the character p
+this number is palindrome
+enter the character a
+1458this number is not armostrog
+enter the character f
+39916800
+enter the character b
+0 1 1 2 3 5 8 13 21 34 55 89 144 
+enter the character c
+ count:5
+enter the character t
+enter an integer55
+55 110 165 220 275 330 385 440 495 550
+enter the character e
+enter the value of num1 and num234
+87
+34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 
+enter the character o
+enter the value of num1 and num245
+97
+45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 
+enter the character v
+enter a charector : o
+charector is vowal 
+enter the character m
+enter  the  num 1-1211
+november
+enter the character r
+7654321
+enter the character g
+enter your age55
+valid for vote
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

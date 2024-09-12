@@ -1,0 +1,509 @@
+c assingment date 21 dec.
+-------------------------------
+q.2
+#include<stdio.h>
+int main()
+{
+	
+    int hindi,eng,math,sci,sst;
+    printf("enter the marks of Hindi : ");
+    scanf("%d",&hindi);
+
+    printf("enter the marks of English : ");
+    scanf("%d",&eng);
+    
+    printf("enter the marks of Math : ");
+    scanf("%d",&math);
+    
+    printf("enter the marks of Science : ");
+    scanf("%d",&sci);
+    
+    printf("enter the marks of Social Science : ");
+    scanf("%d",&sst);
+	
+	printf("Hindi = %d\n",hindi);
+	printf("English = %d\n",eng);
+	printf("Math = %d\n",math);
+	printf("Science = %d\n",sci);
+	printf("Social Scienc  = %d\n",sci);
+	
+    float total=hindi+eng+math+sci+sst;
+    printf("total marks is out of 500 = %f \n",total);
+    
+    float per=(total/500)*100;
+    printf("percentage is : %f\n",per);
+    
+    if(per>80)
+{
+    printf("grade A");
+}
+else if (per>60 && per<=80)
+{
+    printf("grade b");
+}
+else if(per<=60&&per>50)
+{
+    printf("grade c");
+}
+else if(per>45 && per<=50)
+{
+    printf("grade d");
+}
+else if(per>25 && per<=45)
+{
+    printf("grade e");
+}
+else
+{
+    printf("grade f");
+}
+
+
+
+    return 0;
+}
+output:-
+enter the marks of Hindi : 60
+enter the marks of English : 55
+enter the marks of Math : 45
+enter the marks of Science : 88
+enter the marks of Social Science : 76
+Hindi = 60
+English = 55
+Math = 45
+Science = 88
+Social Scienc  = 88
+total marks is out of 500 = 324.000000 
+percentage is : 64.800003
+grade b
+-----------------------------------------------------------------------------------------------------------------
+q.3
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+q.6
+#include <stdio.h>
+int main()
+{
+    char a;
+    printf("print the character");
+    scanf("%c",&a);
+    if (a=='e')
+    {
+        int num;
+        printf("enter the value of num ");
+        scanf("%d",&num);
+        if (num %2==0)
+        printf("even number");
+        else
+        {
+            printf("not even");
+        }
+    }
+    else if (a=='o')
+    {
+    int num1;
+    printf("enter the value of num 1");
+    scanf("%d",&num1);
+    
+    if (num1 %2!=0)
+    
+{
+printf("odd number");
+}
+else
+{
+    printf("not odd number");
+}
+}
+else if(a=='s')
+{
+int a,b;
+printf("enter the value of a and b\n");
+scanf("%d %d",&a,&b);
+a=a+b;
+b=a-b;
+a=a-b;
+printf("the swap value of a:%d\n",a);
+printf("the swap value of b:%d\n",b);
+}
+else if (a=='w')
+{
+int a,b,c;
+printf("enter the value of a and b \n");
+scanf("%d %d",&a,&b);
+c=a;
+a=b;
+b=c;
+printf("the swap value of a:%d\n",a);
+printf("the swap value of b:%d\n",b);
+}
+else if(a=='t')
+        {
+            int a,b,c;
+            printf("enter the value of a and b and c");
+            scanf("%d%d%d",&a,&b,&c);
+    if(a>b&&a>c)
+    {
+        printf("a is max");
+    }
+    else if (b<a&&b>c)
+    {
+        printf("b is max");
+    }else if(c>a&&c>b)
+    {
+      printf("c is max");  
+    } 
+}
+else if(a=='v')
+{
+    
+    int age;
+    printf("enter your age");
+    scanf("%d",&age);
+    if (age>18)
+    {
+        printf("valid for vote");
+    }
+    else if(age<18)
+{
+        printf("not valid for vote");
+}
+}
+else if (a=='g')
+{
+		char gender;
+		printf("enter (m)(M) for man (f)(F) for women:\n");
+		scanf("%c",&gender);
+		if(gender=='f'||gender=='F')
+		{
+			printf("you are female");
+		}
+		else if(gender=='m'||gender=='M')
+		{
+			printf("you are men");
+		}else {
+			printf("not match:");
+		}
+	}
+else if(a=='m')
+{
+float hindi,eng,math,sst,sci;
+printf("enter your marks of hindi,english,math,sst,science : ");
+scanf("%f %f %f %f %f",&hindi,&eng,&math,&sst,&sci);
+float total=hindi+eng+math+sst+sci;
+printf(" total num is out of 500 = %f\n",total);
+
+float per=(total/500)*100;
+printf("per is %f \ngrade is ",per);
+
+if(per>90)
+{
+    printf("A++");
+}
+else if (per>=80 && per<=90)
+{
+    printf("A");
+}
+else if(per<80&&per>=60)
+{
+    printf("B");
+}
+else if(per<60 && per>=45)
+{
+    printf("c");
+}
+else if(per<45 && per>33)
+{
+    printf("d");
+}
+else
+{
+    printf("fail");
+}
+return 0;
+
+}
+else if (a=='c')
+{
+   char a;
+    printf("enter the charector : ");
+    scanf(" %c",&a);
+
+
+   if(a=='a')
+   {
+    int a,b,c;
+    printf("enter the value of a and b : ");
+    scanf("%d %d",&a,&b);
+    c=a+b;
+    printf("%d",c);
+     return 0;
+   }
+  
+
+else if(a=='s')
+{
+    int a,b,c;
+    printf("enter the value of a and b : ");
+    scanf("%d %d",&a,&b);
+    c=a-b;
+    printf("%d",c);
+     return 0;
+}
+
+else if(a=='d')
+{
+    int a,b,c;
+    printf("enter the value of a and b : ");
+    scanf("%d %d",&a,&b);
+    c=a/b;
+    printf("%d",c);
+     return 0;
+}
+else if(a=='m')
+{
+    int a,b,c;
+    printf("enter the value of a and b : ");
+    scanf("%d %d",&a,&b);
+    c=a%b;
+    printf("%d",c);
+     return 0;
+}
+else if(a=='u')
+{
+    int a,b,c;
+    printf("enter the value of a and b : ");
+    scanf("%d %d",&a,&b);
+    c=a*b;
+    printf("%d",c);
+     return 0;
+}
+else
+{
+    printf("enter the correct key the correct key is (a) (s) (d) (m) (u) ");
+}
+
+}
+else if (a=='p')
+{
+		int b;
+	printf("enter 1 to 12 any one number number");
+	scanf("%d",&b);
+	if (b==1)
+	{
+		printf("january");
+	}
+	else if (b==2)
+	{
+		printf("february");
+	}
+	else if (b==3)
+	{
+		printf("march");
+	}
+	else if (b==4)
+	{
+		printf("april");
+	}
+	else if (b==5)
+	{
+		printf("may");
+	}
+	else if (b==6)
+	{
+		printf("june");
+	}
+	else if (b==7)
+	{
+		printf("july");
+	}
+	else if (b==8)
+	{
+		printf("august");
+	}
+	else if (b==9)
+	{
+		printf("september");
+	}
+	else if (b==10)
+	{
+		printf("october");
+	}
+	else if (b==11)
+	{
+		printf("nevember");
+	}
+	else if (b==12)
+	{
+		printf("december");
+	}
+else
+    {
+        printf("please enter a  number in 1 to 7");
+    }
+    
+}
+else if(a=='k')
+{
+    int num;
+    printf("enter a number 1 -7 : ");
+    scanf("%d",&num);
+
+    if(num==1)
+        {
+        printf("sunday");
+    }
+    else if(num==2)
+    {
+        printf("monday");
+    }
+     else if(num==3)
+    {
+        printf("tuesday");
+    }
+     else if(num==4)
+    {
+        printf("wednesday");
+    }
+     else if(num==5)
+    {
+        printf("thursday");
+    }
+     else if(num==6)
+    {
+        printf("friday");
+    }
+     else if(num==7)
+    {
+        printf("saturday");
+    }
+    else{
+        printf("please enter valid key \n try again");
+    }
+}
+return 0;
+}
+output:-
+print the charactere
+enter the value of num 4
+even number
+print the charactero
+enter the value of num 15
+odd number
+print the characters
+enter the value of a and b
+3
+4
+the swap value of a:4
+the swap value of b:3
+print the characterw
+enter the value of a and b 
+3
+7
+the swap value of a:7
+the swap value of b:3
+print the charactert
+enter the value of a and b and c5
+4
+7
+c is max
+print the characterv
+enter your age44
+valid for vote
+print the characterg
+enter gender m|M or f|F : f
+female
+print the characterm
+enter your marks of hindi,english,math,sst,science : 55
+44
+66
+55
+44
+total num is out of 500 = 264.000000
+per is 52.799999 
+grade is c
+print the characterc
+enter the charector : a
+enter the value of a and b : 44
+44
+88
+print the characterc
+enter the charector : s
+enter the value of a and b : 30
+22
+8
+/tmp/W6qPgNShZS.o
+print the characterc
+enter the charector : d
+enter the value of a and b : 56
+52
+1
+print the characterc
+enter the charector : m
+enter the value of a and b : 4
+3
+1
+print the characterc
+enter the charector : u
+enter the value of a and b : 4
+5
+20
+print the characterp
+enter 1 to 12 any one number number5
+may
+/tmp/W6qPgNShZS.o
+print the characterk
+enter a number 1 -7 : 5
+thursday
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

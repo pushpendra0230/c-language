@@ -1,0 +1,425 @@
+c assingment date 23.dec
+----------------------------------------
+q.1
+#include<stdio.h>
+int main()
+{
+  int rem,sum=0;
+  int num=3452;
+  while (num>0)
+  {
+      rem=num%10;
+      sum=sum*10+rem;
+      num=num/10;
+  }
+  {
+  printf("%d",sum);
+  }
+  return 0;
+  }
+output:-
+2543
+-------------------------------------------
+q.2
+int main()
+{
+    int rem,sum=0;
+    int num=12121;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(temp==sum)
+    {
+        printf("this number is pallindrom");
+    }else 
+    {
+        printf("this number is not pallindrom");
+    }    
+    return 0;
+}
+output:-
+this number is pallindrom
+--------------------------------------------------------------------
+q.3
+#include<stdio.h>
+int main()
+{
+    int num=99;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    printf("%d\n",sum);
+    if(temp==sum)
+    {
+        printf("this number is armstrong");
+    }else 
+    {
+        printf("this number is not armstrong");
+    }    
+    return 0;
+}
+output:-
+1458
+this number is not armstrong
+-----------------------------------------------------------------------------
+q.4
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("enter the character ");
+    scanf("%c",&a);
+    
+    if(a=='r')
+    {
+        int num;
+        printf("enter the number");
+        scanf("%d",&num);
+        
+        int sum=0;
+        int rem;
+        
+        while(num>0) 
+        {
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        } 
+            printf(" result:%d",sum);
+    } else if(a=='p')
+    {
+        int rem,sum=0;
+    int num;
+    printf("enter the number");
+    scanf("%d",&num);
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }if(temp==sum)
+    {
+        printf("this number is pallindrom number");
+    }else {
+        printf("this number is not pallindrom number");
+    }
+    }
+    else if(a=='a')
+    {
+        int num;
+        printf("enter the number");
+    scanf("%d",&num);
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    printf("%d\n",sum);
+    if(temp==sum)
+    {
+        printf("this number is armstrong number");
+    }
+    else {
+        printf("this number is not armstrong number ");
+    }
+    }
+else if (a=='e')
+    {
+        int num;
+        printf("enter the value of num");
+        scanf("%d",&num);
+        if(num%2==0)
+        {
+            printf("this is a even number");
+        }
+        else
+        {
+            printf("this is not a even number");
+        }
+    }
+else if (a=='g')
+            {
+                 char gender;
+    printf("enter genderm|M or f|F : ");
+    scanf(" %c",&gender);
+
+    if(gender=='m'||gender=='M')
+    {
+        printf("this is a male gender");
+    }
+    else if (gender=='f'||gender=='F')
+    {
+        printf("this is a female gender");
+    }
+    else 
+    {
+        printf("no match gender");
+            }
+    }
+else if(a=='f')
+{
+    int a,b,c,d,e;
+    printf("enter the value of a and b and c and d and e");
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    
+    if(a>b&&a>c&&a>d&&a>e)
+    {
+        printf("a is max");
+    }
+    else if (b<a&&b>c&&b>d&&b>e)
+    {
+        printf("b is max");
+    }
+    else if(c>a&&c>b&&c>d&&c>e)
+    {
+      printf("c is max");  
+    }
+    else if(d>a&&d>b&&d>c&&d>e)
+    {
+       printf("d is max"); 
+    }
+    else if(e>a&&e>b&&e>c&&e>d)
+    {
+        printf(" e is max");
+        
+    }else 
+        
+    {
+        printf("a and b and c and d and e is same");
+    }
+}  
+else if(a=='m')
+    {
+        float a;
+        printf("enter your percentage ");
+        scanf("%f",&a);
+        if(a>90)
+        {
+            printf("A+");
+        }
+        
+        else if(a<=90&&a>=60)
+        {
+            printf("A");
+        } 
+    
+        else if(a<60&&a>=50)
+        {
+            printf("B");
+        }
+        else
+        {
+            printf("c");
+        }
+    }
+    else if(a=='b')
+    {
+    
+	int unit;
+	printf("Name : rahul\n");
+	printf("enter unit : ");
+	scanf("%d",&unit);
+
+	
+	int pay=unit*10;
+	
+	if(unit>=1&&unit<=10)
+	{
+			printf("unit : %d\n",unit);
+			printf("pay amount %d\n",pay);
+			printf("discount = 10 percent \n");
+		printf(" total pay amount : %d",pay-(pay*10/100));
+	}
+	
+	else if(unit>=11&&unit<=20)
+	{
+			printf("unit : %d\n",unit);
+			printf("pay amount %d\n",pay);
+			printf("discount = 15 percent \n");
+		printf("pay bill : %d",pay-(pay*15/100));
+	}
+	
+	if(unit>=21&&unit<=40)
+	{
+			printf("unit : %d\n",unit);
+			printf("pay amount %d\n",pay);
+			printf("discount = 30 persent \n");
+		printf("pay bill : %d",pay-(pay*30/100));
+	}
+	
+	if(unit>=40&&unit<=50)
+	{
+			printf("unit : %d\n",unit);
+			printf("pay amount %persent\n",pay);
+			printf("discount = 50 percent\n");
+		printf("pay bill : %d",pay-(pay*30/100));
+	
+
+	}
+	}
+	else if(a=='o')
+{
+     int num;
+    printf("enter a num 1 - 12 : ");
+    scanf("%d",&num);
+
+    if(num==1)
+        {
+        printf("january");
+    }
+    else if(num==2)
+    {
+        printf("feburary");
+    }
+     else if(num==3)
+    {
+        printf("march");
+    }
+     else if(num==4)
+    {
+        printf("april");
+    }
+     else if(num==5)
+    {
+        printf("may");
+}
+     else if(num==6)
+    {
+        printf("june");
+    }
+     else if(num==7)
+    {
+        printf("july");
+    }
+     else if(num==8)
+    {
+        printf("auguest");
+    }
+     else if(num==9)
+    {
+        printf("september");
+    }
+     else if(num==10)
+    {
+        printf("october");
+    }
+     else if(num==11)
+    {
+       printf("november");
+    }
+     else if(num==12)
+    {
+        printf("december");
+    }
+    else
+    {
+        printf("please enter a valid number in between 1 to 12");
+}
+}  
+    return 0;
+}
+output:-
+
+enter the character r
+enter the number123
+result:321
+enter the character p
+enter the number123321
+this number is pallindrom number
+enter the character a
+enter the number345
+216
+this number is not armstrong number 
+enter the character e
+enter the value of num334
+this is a even number
+enter the character g
+enter genderm|M or f|F : F
+this is a female gender
+enter the character f
+enter the value of a and b and c and d and e33
+45
+32
+67
+56
+d is max
+enter the character m
+enter your percentage 67
+A
+enter the character b
+Name : rahul
+enter unit : 32
+unit : 32
+pay amount 320
+discount = 30 persent 
+pay bill : 224
+enter the character o
+enter a num 1 - 12 : 11
+november
+-------------------------------------------------------------------------------------------
+q.5
+#include<stdio.h>
+int main(){
+	int n,i=1;
+	printf("enter an integer");
+	scanf("%d",&n);
+	while ( i<=10){
+		printf("%d *%d =%d \n",n,i,n*i);
+		i++;
+	}
+	return 0;
+}
+output:-
+enter an integer5
+5 *1 =5 
+5 *2 =10 
+5 *3 =15 
+5 *4 =20 
+5 *5 =25 
+5 *6 =30 
+5 *7 =35 
+5 *8 =40 
+5 *9 =45 
+5 *10 =50 
+-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

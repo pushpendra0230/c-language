@@ -1,0 +1,254 @@
+c assingment date 29.dec.
+------------------------------------------------------------------------
+q.1.
+a+b.
+
+#include<stdio.h>
+void add();
+int main()
+
+{
+	add();
+	return 0;
+}
+void add()
+{
+	int a,b,c;
+printf("enter the value of a and b for addition : ");
+scanf("%d %d",&a,&b);
+c=a+b;
+printf("%d",c);
+}
+output:-
+enter the value of a and b for addition : 44
+55
+99
+----------------------------------------------------------------------
+q.2.
+no return and no argument 
+add
+sub 
+multi 
+div 
+mod.
+
+#include<stdio.h>
+void add();
+void sub();
+void multi();
+void div();
+void mod();
+int main()
+{
+	add();
+	sub();
+	multi();
+    div();
+    mod();
+	return 0;
+}
+void add(){
+	int a,b;
+	printf("enter the value of a and b for addtion  : ");
+	scanf("%d %d",&a,&b);
+	int c=a+b;
+	printf(" addition is : %d \n",c);
+}
+
+void sub(){
+	int a,b;
+	printf("enter the value of a and b for subtraction : ");
+	scanf("%d %d",&a,&b);
+	int c=a-b;
+	printf(" subtraction is : %d\n",c);
+}
+
+void multi(){
+	int a,b;
+	printf("enter the value of a and b for multiplication  : ");
+	scanf("%d %d",&a,&b);
+	int c=a*b;
+	printf(" muntipication is %d\n",c);
+}
+
+void div(){
+	int a,b;
+	printf("enter the value of a and b for divide  : ");
+	scanf("%d %d",&a,&b);
+	int c=a/b;
+	printf(" division is : %d\n",c);
+}
+
+void mod(){
+	int a,b;
+	printf("enter the value of a and b for modular  : ");
+	scanf("%d %d",&a,&b);
+	int c=a%b;
+	printf(" remainder %d\n",c);
+}
+output:-
+enter the value of a and b for addtion  : 44
+55
+addition is : 99 
+enter the value of a and b for subtraction : 44
+33
+subtraction is : 11
+enter the value of a and b for multiplication  : 44
+2
+muntipication is 88
+enter the value of a and b for divide  : 56
+4
+division is : 14
+enter the value of a and b for modular  : 56
+5
+remainder 1
+---------------------------------------------------------------------------------
+q.3.
+no return and argument 
+add
+sub 
+multi 
+div 
+mod.
+
+#include<stdio.h>
+void add(int a,int b);
+void sub(int a,int b);
+void multi(int a,int b);
+void div(int a,int b);
+void mod(int a,int b);
+int main()
+{
+	int a,b;
+	printf("entger the value of a and b : ");
+	scanf("%d %d",&a,&b);
+   	add(a,b);
+   	sub(a,b);
+   	multi(a,b);
+	div(a,b);
+   	mod(a,b);
+	return 0;
+}
+void add (int a,int b)
+{
+int c=a+b;
+printf(" addition is : %d\n",c);
+}
+void sub (int a,int b)
+{
+int c=a-b;
+printf("subtraction is : %d\n",c);
+}
+void multi (int a,int b)
+{
+int c=a*b;
+printf("multiplication  is : %d\n",c);
+}
+void div (int a,int b)
+{
+int c=a/b;
+printf("divide  is : %d\n",c);
+}
+void mod (int a,int b)
+{
+int c=a%b;
+printf("modular is : %d\n",c);
+}
+output:-
+entger the value of a and b : 56
+4
+addition is : 60
+subtraction is : 52
+multiplication  is : 224
+divide  is : 14
+modular is : 0
+----------------------------------------------------------------------
+q.4.
+return and argument 
+add
+sub 
+multi 
+div 
+mod.
+
+#include<stdio.h>
+int addition(int a,int b);
+int subtraction (int ,int b);
+int multiplication (int ,int b);
+int divide (int ,int b);
+int modular (int ,int b);
+int main()
+{
+	int a,b;
+	printf("enter the value of a and b : ");
+	scanf("%d %d",&a,&b);
+	
+	int sum=addition(a,b);
+	printf("addition is : %d\n",sum);
+	
+	int c=subtraction(a,b);
+	printf("subustraction is : %d\n",c);
+	
+	int d=multiplication(a,b);
+	printf("multiplication is : %d\n",d);
+	
+	int e=divide(a,b);
+	printf("divide is : %d\n",e);
+
+	int f=modular(a,b);
+	printf("modular is : %d\n",f);
+	
+	return 0;
+}
+int addition(int a,int b)
+	{
+		return a+b;
+}
+int subtraction(int a,int b)
+	{
+		return a-b;
+}
+int multiplication(int a,int b)
+	{
+		return a*b;
+}
+int divide(int a,int b)
+	{
+		return a/b;
+}
+int modular(int a,int b)
+	{
+		return a%b;
+}
+output:-
+enter the value of a and b : 56
+4
+addition is : 60
+subustraction is : 52
+multiplication is : 224
+divide is : 14
+modular is : 0
+============================================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

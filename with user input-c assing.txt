@@ -1,0 +1,280 @@
+with user input:-
+q.1
+#include<stdio.h>
+int main(){
+int a,b;
+float  c,d;
+char e,f;
+printf("enter a number:\n");
+scanf("%d",&a);
+printf("enter a number:\n");
+scanf("%d",&b);
+printf("enter a float number in decimal:\n");
+scanf("%f",&c);
+printf("enter a float number in decimal:\n");
+scanf("%f",&d);
+printf("enter a char value:\n");
+scanf("%c",&e);
+printf("enter a char value:\n");
+scanf("%c",&f);
+printf("%d\n",a);
+printf("%d\n",b);
+printf("%f\n",c);
+printf("%f\n",d);
+printf("%c\n",e);
+printf("%c\n",f);
+return 0;
+}
+output:-
+enter a number:
+34
+enter a number:
+12
+enter a float number in decimal:
+8.9
+enter a float number in decimal:
+6.7
+enter a char value:
+enter a char value:
+w
+o
+-------------------------------------------------------------------------
+q.2
+#include<stdio.h>
+int main(){
+int  a,b,c;
+printf("enter any three number:\n");
+scanf("%d%d%d",&a,&b,&c);
+
+float d,e;
+printf("enter any two float number:\n");
+scanf("%f%f",&d,&e);
+
+char f,g;
+printf ("enter any two char value:\n");
+scanf("%c%c",&f,&g);
+
+printf("%d\n",a);
+printf("%d\n",b);
+printf("%d\n",c);
+printf("%f\n",d);
+printf("%f\n",e);
+printf("%c\n",f);
+printf("%c\n",g);
+return 0;
+}
+output:-
+enter any three number:
+12
+-78
+16
+enter any two float number:
+8.9
+-9.8
+enter any two char value:
+y
+r
+
+q.3
+#include<stdio.h>
+int main()
+{
+    //23+9
+    int a;
+    printf("enter the value of a ");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b ");
+    scanf("%d",&b);
+    int result=a+b;
+    printf ("%d",result);
+    return 0;
+}
+output:-
+
+enter the value of a 23
+enter the value of b 9
+32
+--------------------------------------------------------------
+q.4
+#include<stdio.h>
+int main()
+{
+    //23-9
+    int a;
+    printf("enter the value of a ");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b ");
+    scanf("%d",&b);
+    int result=a-b;
+    printf ("%d",result);
+    return 0;
+}
+output:-
+enter the value of a 23
+enter the value of b 9
+14
+------------------------------------------------------------------------
+q.5
+#include<stdio.h>
+int main()
+{
+    //12*3
+    int a;
+    printf("enter the value of a ");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b ");
+    scanf("%d",&b);
+    int result=a*b;
+    printf ("%d",result);
+    return 0;
+}
+output:-
+enter the value of a 12
+enter the value of b 3
+36
+-------------------------------------------------------------------------------
+q.6
+#include<stdio.h>
+int main()
+{
+    //66/3
+    int a;
+    printf("enter the value of a ");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b ");
+    scanf("%d",&b);
+    int result=a/b;
+    printf ("%d",result);
+    return 0;
+}
+output:-
+enter the value of a 66
+enter the value of b 3
+22
+----------------------------------------------------------------------------
+q.7
+#include<stdio.h>
+int main()
+{
+    //56+78+34+12
+    int a;
+    printf("enter the value of a ");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b ");
+    scanf("%d",&b);
+    int c;
+    printf("enter the value of c");
+    scanf("%d",&c);
+    int d;
+    printf("enter the value of d");
+    scanf("%d",&d);
+    int result=a+b+c+d;
+    printf ("%d",result);
+    return 0;
+}
+output:-
+enter the value of a 56
+enter the value of b 78
+enter the value of c34
+enter the value of d12
+180
+-------------------------------------------------------------------------------------
+q.8
+#include<stdio.h>
+int main()
+{
+    //12*4-6/2
+    int a;
+    printf("enter the value of a ");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b ");
+    scanf("%d",&b);
+    int c;
+    printf("enter the value of c");
+    scanf("%d",&c);
+    int d;
+    printf("enter the value of d");
+    scanf("%d",&d);
+    int result=a*b-c/d;
+    printf ("%d",result);
+    return 0;
+}
+output:-
+enter the value of a 12
+enter the value of b 4
+enter the value of c6
+enter the value of d2
+45
+---------------------------------------------------------------------------------
+q.9
+#include<stdio.h>
+int main()
+{
+    //1.2*2-(8/2)
+    float a;
+    printf("enter the value of a ");
+    scanf("%f",&a);
+    int b;
+    printf("enter the value of b ");
+    scanf("%d",&b);
+    int c;
+    printf("enter the value of c");
+    scanf("%d",&c);
+    int d;
+    printf("enter the value of d");
+    scanf("%d",&d);
+    float result=a*b-(c/d);
+    printf ("%f",result);
+    return 0;
+}
+output:-
+enter the value of a 1.2
+enter the value of b 2
+enter the value of c8
+enter the value of d2
+-1.600000
+-----------------------------------------------------------------------------------------
+q.10
+#include<stdio.h> 
+int main()
+{
+	int a;
+	printf("enter the value of a");
+	scanf("%d",&a);
+	int b;
+	printf("enter the value of b");
+	scanf("%d",&b);
+	int c;
+	printf("enter the value of c");
+	scanf("%d",&c);
+	int d;
+	printf("enter the value of d");
+	scanf("%d",&d);
+	int e;
+      printf("enter the value of  e");
+      scanf("%d",&e);
+      float f;
+      printf("enter the value of f in decimal value");
+      scanf("%f",&f);
+      float g;
+      printf("enter the value of g in decimal value");
+      scanf("%f",&g);
+      float h=a*b+c-(d-e)+f-g;
+    
+      printf("enter the value : %f",h);
+
+      return 0;
+}  
+output:-
+enter the value of d34
+enter the value of  e3
+enter the value of f in decimal value3.4
+enter the value of g in decimal value8.9
+enter the value : 92.500000
+------------------------------------------------------------------------------------------------

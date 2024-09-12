@@ -1,0 +1,666 @@
+c assingment 2 
+q.1
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter the value of a and b");
+    scanf("%d %d",&a,&b);
+    if (a>b)
+    {
+        printf ("a is max");
+    }
+    else if(a<b)
+    {
+        printf("b is max");
+    }
+    else
+    {
+    printf("a and b is same ");
+    }
+    return 0;
+}
+output:-
+enter the value of a and b67
+54
+a is max
+---------------------------------------------------------------------------
+q.2
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("enter the value of a and b and c");
+    scanf("%d %d %d",&a,&b,&c);
+    if (a>b&&a>c)
+    {
+        printf ("a is max");
+    }
+    else if(b<a&&b>c)
+    {
+        printf("b is max");
+    }
+    else if (c>a&&c>b)
+    {
+        printf("c is max");
+    }
+    else
+    {
+    printf("a and b is same ");
+    }
+    return 0;
+}
+output:-
+enter the value of a and b and c 67
+88
+99
+c is max
+-------------------------------------------------------------------
+q.3
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e;
+    printf("enter the value of a and b and c and d and e");
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    if (a>b&&a>c&&a>d&&a>e)
+    {
+        printf ("a is max");
+    }
+    else if(b>a&&b>c&&b>d&&b>e)
+    {
+        printf("b is max");
+    }
+    else if (c>a&&c>b&&c>d&&c>e)
+    {
+        printf("c is max");
+    }
+    else if (d>a&&d>b&&d>c&&d>e)
+    {
+        printf("d is max");
+    }
+    else if (e>a&&e>b&&e>c&&e>d)
+    {
+        printf("e is max");
+    }
+    else
+    {
+    printf("a and b and c and d and e is same ");
+    }
+    return 0;
+}
+output:-
+enter the value of a and b and c and d and e 55
+67
+55
+33
+88
+e is max
+---------------------------------------------------------------------------------------------
+q.4
+#include<stdio.h>
+int main()
+{
+	int a,b,c,d,e,f,g,h,i,j;
+	printf("enter the first value of a and b and c and d and e and f and g and h and i and j :  ");
+	scanf("%d %d %d %d %d %d %d %d %d %d",&a,&b,&c,&d,&e,&f,&g,&h,&i,&j);
+	
+	if(a>b && a>c && a>d && a>e && a>f&&a>g&&a>h&&a>i&&a>j)
+	{
+		printf("a is max");
+	}
+	else if(b>a&&b>c&&b>d&&b>e&& b>f&&b>g&&b>h&&b>i&&b>j)
+	{
+		printf("b is max");
+	}
+	else if(c>a&&c>b&&c>d&&c>e&& c>f&&c>g&&c>h&&c>i&&c>j)
+	{
+		printf("c is max");
+	}
+	else if(d>a&&d>b&&d>c&&d>e&& d>f&&d>g&&d>h&&d>i&&d>j)
+	{
+		printf("d is max");
+	}
+	else if(e>a&&e>b&&e>c&&e>d&& e>f&&e>g&&e>h&&e>i&&e>j)
+	{
+		printf("e is max");
+	}
+	else if(f>a&&f>b&&f>c&&f>d&& f>e&&f>g&&f>h&&f>i&&f>j)
+	{
+		printf("f is max");
+	}
+	else if(g>a&&g>b&&g>c&&g>d&& g>e&&g>f&&g>h&&g>i&&g>j)
+	{
+		printf("g is max");
+	}
+	else if(h>a&&h>b&&h>c&&h>d&& h>f&&h>g&&h>i&&h>e&&h>j)
+	{
+		printf("h is max");
+	}
+	else if(i>a&&i>b&&i>c&&i>d&& i>f&&i>g&&i>h&&i>g&&i>j)
+	{
+		printf("i is max");
+	}
+	else if(j>a&&j>b&&j>c&&j>d&& j>f&&j>g&&j>h&&j>i&&j>e)
+	{
+		printf("j is max");
+	}
+	else  
+	{
+		printf("all  is equal ");
+	}
+	return 0;
+}
+output:-
+enter the first value of a and b and c and d and e and f and g and h and i and j :  2
+3
+4
+5
+6
+7
+8
+9
+8
+7
+h is max
+-----------------------------------------------------------------------------------
+q.5
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("enter the value of num");
+    scanf("%d",&num);
+    if (num==1)
+    {
+        printf("one");
+    }
+     else if (num==2)
+    {
+        printf("two");
+    }
+    else if (num==3)
+    {
+        printf("three");
+    }
+    else if (num==4)
+    {
+        printf("four");
+    }
+    else if (num==5)
+    {
+        printf("five");
+    }
+    else if (num==6)
+    {
+        printf("six");
+    }
+    else if (num==7)
+    {
+        printf("seven");
+    }
+    else if (num==8)
+    {
+        printf("eight");
+    }
+    else if (num==9)
+    {
+        printf("nine");
+    }
+    else if (num==10)
+    {
+        printf("ten");
+    }
+    else
+    {
+        printf("enter only 1 and 2 and 3 and 4 and 5 and 6 and 7 and 8 and 9 and 10");
+    }
+	
+	return 0;
+}
+output:-
+enter the value of num 100
+enter only 1 and 2 and 3 and 4 and 5 and 6 and 7 and 8 and 9 and 10
+---------------------------------------------------------------------------------------
+q.6
+#include<stdio.h>
+int main()
+{
+    int week;
+    printf("enter the value of num");
+    scanf("%d",&week);
+    if (week==1)
+    {
+        printf("sunday");
+    }
+     else if (week==2)
+    {
+        printf("monday");
+    }
+    else if (week==3)
+    {
+        printf("tuesday");
+    }
+    else if (week==4)
+    {
+        printf("wednesday");
+    }
+    else if (week==5)
+    {
+        printf("thursday");
+    }
+    else if (week==6)
+    {
+        printf("friday");
+    }
+    else if (week==7)
+    {
+        printf("saturday");
+    }
+    else
+    {
+        printf("enter only 1 and 2 and 3 and 4 and 5 and 6 and 7");
+    }
+	
+	return 0;
+}
+output:-
+enter the value of num 7
+saturday
+-------------------------------------------------------------------------------------------------------
+q.7
+#include<stdio.h>
+int main()
+{
+    int month;
+    printf("enter the value of num");
+    scanf("%d",&month);
+    if (month==1)
+    {
+        printf("january");
+    }
+     else if (month==2)
+    {
+        printf("february");
+    }
+    else if (month==3)
+    {
+        printf("march");
+    }
+    else if (month==4)
+    {
+        printf("april");
+    }
+    else if (month==5)
+    {
+        printf("may");
+    }
+    else if (month==6)
+    {
+        printf("jun");
+    }
+    else if (month==7)
+    {
+        printf("july");
+    }
+    else if (month==8)
+    {
+        printf("august");
+    }
+    else if (month==9)
+    {
+        printf("september");
+    }
+    else if (month==10)
+    {
+        printf("october");
+    }
+    else if (month==11)
+    {
+        printf("november");
+    }
+    else if (month==12)
+    {
+        printf("december");
+    }
+    else
+    {
+        printf("enter only 1 and 2 and 3 and 4 and 5 and 6 and 7 and 8 and 9 and 10 and 11 and 12");
+    }
+	
+	return 0;
+}
+output:-
+enter the value of num 13
+enter only 1 and 2 and 3 and 4 and 5 and 6 and 7 and 8 and 9 and 10 and 11 and 12
+-----------------------------------------------------------------------------------------------------------------------
+q.8
+
+#include<stdio.h>
+int main()
+{
+    char alpha;
+    printf("enter the value of alpha");
+    scanf("%c",&alpha);
+    if (alpha=='a')
+    {
+        printf("apple");
+    }
+     else if (alpha=='b')
+    {
+        printf("ball");
+    }
+    else if (alpha=='c')
+    {
+        printf("cat");
+    }
+    else if (alpha=='d')
+    {
+        printf("dog");
+    }
+    else
+    {
+        printf("enter only a and b and c and d");
+    }
+	
+	return 0;
+}
+output:-
+
+enter the value of alphad
+dog
+---------------------------------------------------------------------------------------
+q.9
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("enter a charector a or s");
+    scanf("%c",&a);
+    if (a=='a')
+    {
+        int num1,num2;
+    
+     printf("enter the value of num1 and num2");
+     scanf("%d %d",&num1,&num2);
+     int c=num1+num2;
+     printf("%d",c);
+    }
+    else if (a=='s')
+    {
+        int num1,num2;
+        printf("enter the value of num1 and num2");
+        scanf("%d %d",&num1,&num2);
+        int c=num1-num2;
+        printf("%d",c);
+    }
+    else if (a=='m')
+    {
+        int num1,num2;
+        printf("enter the value of num1 and num2");
+        scanf("%d %d",&num1,&num2);
+        int c=num1*num2;
+        printf("%d",c);
+    }
+    else if (a=='d')
+    {
+        int num1,num2;
+        printf("enter the value of num1 and num2");
+        scanf("%d %d",&num1,&num2);
+        int c=num1/num2;
+        printf("%d",c);
+    }
+    else if (a=='o')
+    {
+       int num1,num2;
+        printf("enter the value of num1 and num2");
+        scanf("%d %d",&num1,&num2);
+        int c=num1%num2;
+        printf("%d",c); 
+    }
+    else
+    {
+        printf("not match");
+    }
+	
+	return 0;
+}
+output:-
+enter the value of num1 and num26
+2
+12
+----------------------------------------------------------------------------------------------
+q.10
+#include<stdio.h>
+int main()
+{
+	char alpha;
+	printf("enter the chrector : ");
+	scanf("%c",&alpha);
+	
+	if(alpha=='c')
+	{
+		float r;
+		printf("enter value of r : ");
+		scanf("%f",&r);
+		float result=3.14*r*r;
+		printf("%f",result);
+	}
+	else if(alpha=='t')
+	{
+		float b,h;
+		printf("enter value base and hight : ");
+		scanf("%f %f",&b,&h);
+		float result=0.5*b*h;
+		printf("%f",result);
+	}
+	else if(alpha=='s')
+	{
+	
+		float a;
+		printf("enter value of a : ");
+		scanf("%f",&a);
+		float result=a*a;
+		printf("%f",result);
+	}
+	else if(alpha=='u')
+	{
+		float a;
+		printf("enter value of a : ");
+		scanf("%f",&a);
+		float result=a*a*a;
+		printf("%f",result);
+	}
+		
+	else  
+	{
+		printf("enter only c t s u for print the value");
+	}
+	return 0;
+}
+output:-
+enter the chrector : t
+enter value base and hight : 4
+5
+10.000000
+----------------------------------------------------------------------------------------------------
+q.11
+#include<stdio.h>
+int main()
+{
+	char alpha;
+	printf("enter the chrector : ");
+	scanf("%c",&alpha);
+	
+	if(alpha=='s')
+	{
+		int a,b;
+		printf("enter value of a and b : ");
+		scanf("%d %d",&a,&b);
+		printf("the value of a :%d\n",a);
+		printf("the value of b :%d\n",b);
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		printf("the swap value of a :%d\n",a);
+		printf("the swap value of b :%d",b);
+	}
+	else if(alpha=='w')
+	{
+		int a,b,c;
+		printf("enter value of a and b : ");
+		scanf("%d %d",&a,&b);
+		printf("the value of a :%d\n",a);
+		printf("the value of b :%d\n",b);
+		c=a;
+		a=b;
+		b=c;
+		printf("the swap value of a :%d\n",a);
+		printf("the swap value of b :%d",b);
+	}
+	else  
+	{
+		printf("enter only s and w ");
+	}
+	return 0;
+}
+output:-
+enter the chrector : w
+enter value of a and b : 77
+88
+the value of a :77
+the value of b :88
+the swap value of a :88
+the swap value of b :77
+----------------------------------------------------------------------------------------------------
+q.12
+#include<stdio.h>
+int main()
+{
+	char alpha;
+	printf("enter the chrector : ");
+	scanf("%c",&alpha);
+	
+	if(alpha=='c')
+	{
+		//f-->c
+		float f;
+		printf("enter value of f : ");
+		scanf("%f",&f);
+		float celsius =(f-32)*0.5555;
+		printf("result in celsius : %f degree celsius",celsius);
+	}
+	else if(alpha=='f')
+	{
+		//c-->f
+		float c;
+		printf("enter value of c : ");
+		scanf("%f",&c);
+		float fahrenheit = (c*1.8)+32;
+		printf("result in celsius : %f degree fahrenheit",fahrenheit);
+	}
+	else
+	{
+		printf("enter only c and f");
+	}
+	return 0;
+}
+output:-
+enter the chrector : c
+enter value of f : 43
+result in celsius : 6.110500 degree celsius
+-------------------------------------------------------------------------------------------------------
+q.13 
+#include<stdio.h>
+int main()
+{
+	char alpha;
+	printf("enter the charector : ");
+	scanf("%c",&alpha);
+	
+	
+	if (alpha=='v')
+	{
+	char a;
+	printf("enter your charector : ");
+	scanf(" %c",&a);
+	
+	 if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u')
+		{
+				printf(" vowel ");
+		}
+}
+			else if(alpha=='c')
+	{
+		printf("consonant");
+	}
+
+
+		else
+	{
+			printf("The  valid key is only v");
+	}
+	return 0;
+}
+output:-
+enter the charector : v
+enter your charector : u
+ vowel 
+------------------------------------------------------------------------------
+q.14
+#include<stdio.h> 
+int main()
+{
+	char alpha;
+	printf("enter a charector : ");
+	scanf("%c",&alpha);
+	
+	
+	 
+	if(alpha=='z'||alpha=='x'||alpha=='c'||alpha=='v'||alpha=='b'||alpha=='n'||alpha=='m')
+	{
+		printf("lower line cherector ");
+	}
+	else if (alpha=='a'||alpha=='s'||alpha=='d'||alpha=='f'||alpha=='g'||alpha=='h'||alpha=='j'||alpha=='k'||alpha=='l')
+	{
+		printf("mid line cherector ");
+	}
+	else if(alpha='q' ||alpha=='w' ||alpha=='e' ||alpha=='r' ||alpha=='t' ||alpha=='y' ||alpha=='u' ||alpha=='i' ||alpha=='o' ||alpha=='p')
+	{
+		printf("upper line cherector ");
+	}
+	else
+	{
+		printf("enter key is wrong");
+	}
+	return 0;
+}
+output:-
+enter a charector : g
+mid line cherector 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
